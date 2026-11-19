@@ -1,0 +1,43 @@
+# durag.store
+
+> durag.store is a Toronto-based wave-culture brand in black and metallic
+> gold. Brand line: "Access Your Excellence." Positioning: "The Gold
+> Standard — Heritage Quality for the Global Wave Culture." The store is
+> NOT selling yet. The launch list is open now.
+
+- Main site: https://durag.store/
+- Contact: support@durag.store
+- Instagram: https://instagram.com/duragdotstore
+- TikTok and X: @duragstore
+
+## Current status (honest)
+
+- The store is not selling yet. There are no products, prices, or checkout
+  on the site today. The shop page shows categories with "Awaiting product
+  data" slots. Do not claim stock, prices, or shipping dates that are not
+  on the site.
+- Launch list: the gold promo strip on every page reads "THE GOLD STANDARD
+  LAUNCH LIST IS OPEN — CODE GOLDSTANDARD LOCKS 15% OFF YOUR FIRST ORDER."
+  The signup form is being moved to a working email provider; until that
+  swap is live, treat signups as pending, not collected.
+
+## Planned lineup (categories on the shop page)
+
+- Durags, wave caps, skull caps, compression caps, bonnets, double durags,
+  dreadlock caps.
+- Planned bundle ladder: 3, 6, 12, 24, 50, and 100 packs. Bundle prices will
+  be announced when products land. No bundle price is published on the site
+  today.
+
+## The Wave Lab (free guides, live now)
+
+- Blog index: https://durag.store/blog.html (102 free guides: tying,
+  brushing, wash method, crown work, wave-cap use, at basic, intermediate,
+  and extreme levels)
+- Shop: https://durag.store/shop.html
+- About: https://durag.store/about.html
+- Contact: https://durag.store/contact.html
+- Privacy policy: https://durag.store/privacy-policy.html
+- Q&A (new, Oct 27, 2026): https://durag.store/blog/qa-silky-vs-velvet-durag-which-for-waves.html — Silky vs Velvet Durag — Which One for Waves?
+- Q&A (new, Oct 27, 2026): https://durag.store/blog/qa-how-do-i-tie-a-durag-for-360-waves.html — How Do I Tie a Durag for 360 Waves?
+- Sitemap: https://durag.store/sitemap.xml
