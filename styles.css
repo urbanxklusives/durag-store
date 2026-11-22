@@ -163,3 +163,11 @@ a.card:hover{border-color:var(--accent)}
 .foot-grid .socials a:hover{color:var(--accent)}
 .foot-fine{color:#6f6f6f;font-size:12px;margin-top:26px}
 @media (max-width:720px){.foot-grid{grid-template-columns:1fr}}
+
+/* ---------- AdSense containers (blog posts only) ---------- */
+/* Same pattern as wintercarprep.com: auto-format units, no invented
+   slot IDs. Script + ads.txt already site-wide. Shop/product/category
+   pages stay ad-free so the buying flow stays clean. */
+.adslot{border:1px dashed rgba(212,175,55,.4);background:#141414;color:#8a8a8a;text-align:center;padding:26px 10px;border-radius:8px;margin:20px 0;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.adslot-in{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(180deg,#171410,#141414);border-radius:12px}
+.adslot-in ins{width:100%}
