@@ -1,0 +1,202 @@
+/* durag.store — shop polish (Black Friday launch)
+   Loaded AFTER styles.css on shop pages only (black-friday, shop,
+   category pages, product pages). Black/gold UXK identity throughout:
+   circular gold logo, #d4af37 accent, no other brand colours.
+   Nothing here changes prices, copy, schema, or buy-button state. */
+
+/* ---------- shop category nav (pill bar under the header) ---------- */
+.shop-nav{border-bottom:1px solid var(--line);background:#0d0d0d}
+.shop-nav-in{display:flex;gap:10px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+.shop-nav a{
+  border:1px solid var(--line);border-radius:999px;
+  padding:9px 18px;font-size:12px;font-weight:800;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--grey);white-space:nowrap;
+  transition:border-color .2s,color .2s,background .2s;
+}
+.shop-nav a:hover{border-color:var(--accent);color:var(--white)}
+.shop-nav a.active{background:var(--accent);border-color:var(--accent);color:#0a0a0a}
+
+/* ---------- product + category grids ---------- */
+.grid.prods{grid-template-columns:repeat(3,1fr);gap:24px}
+.grid.cats{grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:1023px){
+  .grid.prods,.grid.cats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:639px){
+  .grid.prods,.grid.cats{grid-template-columns:1fr}
+}
+
+/* ---------- product / category cards ---------- */
+.card.prod-card,.card.cat-card{
+  padding:0;min-height:0;justify-content:flex-start;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.card.prod-card::before,.card.cat-card::before{display:none}
+a.card.prod-card:hover,a.card.cat-card:hover{
+  transform:translateY(-4px);
+  border-color:var(--accent);
+  box-shadow:0 18px 40px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.35);
+}
+
+/* branded media block — photo drops into this same frame Tue Nov 24 */
+.card-media{
+  aspect-ratio:4/3;
+  background:
+    radial-gradient(420px 220px at 82% 0%,rgba(212,175,55,.30),transparent 62%),
+    linear-gradient(150deg,#1d1a11 0%,#121212 55%,#0a0a0a 100%);
+  border-bottom:1px solid rgba(212,175,55,.35);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  padding:26px 18px;overflow:hidden;
+}
+.card-media-logo{
+  width:88px;height:88px;border-radius:50%;
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 6px rgba(212,175,55,.12),0 12px 30px rgba(0,0,0,.55);
+}
+.card-media-tag{
+  font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;
+  color:var(--accent);
+}
+.card-media.has-photo{padding:0}
+.card-media.has-photo img.card-img{
+  width:100%;height:100%;object-fit:cover;margin:0;border-radius:0;display:block;
+}
+
+.card-body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:18px;line-height:1.3}
+.card-price{margin-top:6px}
+.card-price-amount{font-size:27px;font-weight:900;color:var(--white);letter-spacing:-.5px}
+.card-price-cur{font-size:13px;font-weight:700;letter-spacing:1px;color:var(--grey)}
+.card-price-per{font-size:13px;color:var(--grey)}
+.card-pack{color:var(--accent);font-size:14px;font-weight:700}
+.card-colours{color:var(--grey);font-size:13px}
+.card-contents{color:var(--grey);font-size:14px}
+.card-singles{color:var(--grey);font-size:14px}
+.card-singles s{color:#8a8a8a}
+.card-save{color:var(--accent);font-size:14px;font-weight:700}
+
+/* coming-soon pill, pinned to the card foot */
+.card .soon{
+  align-self:flex-start;margin-top:auto;padding-top:14px;
+  color:var(--accent);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px;
+}
+.card .soon span{
+  display:inline-block;border:1px solid var(--accent);border-radius:999px;padding:6px 12px;
+}
+
+/* ---------- collection hero + code box (black-friday.html) ---------- */
+.hero-photo{border:2px solid var(--accent);border-radius:12px;max-width:640px;margin-top:30px;overflow:hidden;box-shadow:0 20px 44px rgba(0,0,0,.5)}
+.hero-photo img{display:block;width:100%;height:auto}
+.hero-photo figcaption{padding:14px 18px;color:var(--grey);font-size:14px;background:#161616}
+.code-box{
+  border:2px solid var(--accent);border-radius:10px;padding:24px 28px;margin:28px 0;max-width:760px;
+  background:linear-gradient(150deg,rgba(212,175,55,.12),transparent 60%),#121212;
+}
+.code-box h2{margin:0 0 8px;font-size:18px;text-transform:uppercase;letter-spacing:1px}
+.code-box p{color:var(--grey);margin:0}
+.code-box code{color:var(--accent);font-weight:800;font-size:22px}
+.brand-stack{text-align:center;padding:0 0 40px}
+.brand-stack p{letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--accent);font-size:14px;margin:0}
+.pickup-note{color:var(--grey);margin-top:28px}
+
+/* ---------- product pages ---------- */
+.back-link{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.back-link a{color:var(--grey)}
+.back-link a:hover{color:var(--accent)}
+.coming-badge{
+  display:inline-block;background:var(--accent);color:#0a0a0a;font-weight:800;
+  letter-spacing:2px;font-size:12px;text-transform:uppercase;
+  padding:7px 13px;border-radius:2px;margin:14px 0 16px;
+}
+.prod-name{
+  font-size:clamp(30px,4.5vw,44px);font-weight:900;text-transform:uppercase;
+  letter-spacing:-.5px;line-height:1.05;margin:6px 0 4px;
+}
+.status-line{color:var(--grey);margin:10px 0 28px;font-size:15px}
+.prod-layout{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media (max-width:860px){.prod-layout{grid-template-columns:1fr;gap:28px}}
+
+/* branded image slot — real product photo drops into this frame Tue Nov 24 */
+.img-slot{
+  position:relative;border:2px solid var(--accent);border-radius:12px;
+  background:
+    radial-gradient(480px 300px at 85% 0%,rgba(212,175,55,.26),transparent 62%),
+    linear-gradient(160deg,#1d1a11 0%,#0a0a0a 60%);
+  aspect-ratio:4/5;min-height:480px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+  text-align:center;padding:28px;overflow:hidden;
+}
+.img-slot .slot-logo{
+  position:static;width:120px;height:120px;border-radius:50%;
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 8px rgba(212,175,55,.12),0 16px 36px rgba(0,0,0,.55);
+}
+.img-slot .slot-tag{
+  font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--accent);
+}
+.img-slot p{color:var(--grey);font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0}
+@media (max-width:860px){.img-slot{min-height:400px;aspect-ratio:auto}}
+
+.prod-price{margin:4px 0 8px}
+.prod-price-label{font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--grey)}
+.prod-price-amount{font-size:34px;font-weight:900;letter-spacing:-.5px}
+.prod-price-cur{font-size:14px;font-weight:700;letter-spacing:1px;color:var(--grey)}
+.prod-meta{color:var(--grey);margin-bottom:6px}
+.fabric-note{color:var(--accent);font-weight:700;margin:12px 0}
+.price-table{width:100%;border-collapse:collapse;margin:18px 0 8px}
+.price-table th,.price-table td{border:1px solid var(--line);padding:12px 14px;text-align:left;font-size:15px}
+.price-table th{
+  color:var(--accent);text-transform:uppercase;letter-spacing:1px;font-size:12px;
+  background:#1d1a11;
+}
+.price-table tr:nth-child(even){background:#141414}
+.price-table tr.best-row td{
+  background:rgba(212,175,55,.14);font-weight:800;color:var(--white);
+}
+.price-table tr.best-row td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.pack-math{color:var(--grey);font-size:14px;margin:0 0 18px}
+.pickup-note{color:var(--grey);margin:16px 0}
+
+/* buy button — obvious, but disabled until Black Friday Nov 27 */
+.buy-btn{width:100%;padding:18px 24px;font-size:15px;border-radius:4px;margin-top:6px}
+.buy-btn:disabled{
+  background:transparent;border:2px solid var(--accent);color:var(--accent);
+  opacity:.9;cursor:not-allowed;
+}
+
+.bundle-list{margin:12px 0 18px;padding-left:0;list-style:none;color:var(--grey)}
+.bundle-list li{margin-bottom:8px;padding-left:26px;position:relative}
+.bundle-list li::before{
+  content:"\2713";position:absolute;left:0;top:0;color:var(--accent);font-weight:800;
+}
+.bundle-save{color:var(--accent);font-weight:800;font-size:18px;margin:8px 0 18px}
+
+/* ---------- category pages ---------- */
+.bf-pointer{
+  border:2px solid var(--accent);border-radius:10px;padding:24px 28px;margin:28px 0;
+  background:linear-gradient(150deg,rgba(212,175,55,.10),transparent 60%),#121212;
+}
+.bf-pointer h2{margin:0 0 8px;font-size:20px;text-transform:uppercase;letter-spacing:1px;color:var(--accent)}
+.bf-pointer p{color:var(--grey);margin:0}
+.bf-pointer p a{
+  display:inline-block;margin-top:14px;background:var(--accent);color:#0a0a0a;
+  font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;
+  padding:12px 22px;border-radius:2px;
+}
+.bf-pointer p a:hover{background:var(--accent-dark);color:var(--white)}
+.cat-links{margin-top:32px}
+.cat-links a{
+  display:inline-block;border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;margin:0 4px 8px 0;font-size:12px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;color:var(--grey);
+}
+.cat-links a:hover{border-color:var(--accent);color:var(--white)}
+
+/* ---------- small screens ---------- */
+@media (max-width:720px){
+  .shop-nav-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:14px}
+  .shop-nav-in::-webkit-scrollbar{display:none}
+  .prod-price-amount{font-size:30px}
+  .card-price-amount{font-size:24px}
+  .code-box code{font-size:19px}
+}

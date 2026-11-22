@@ -27,6 +27,7 @@
 <meta name="twitter:image" content="https://durag.store/assets/logo-durag-store.png">
 <link rel="icon" href="assets/logo-durag-store.png">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="shop.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5726111751212432" crossorigin="anonymous"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Skull Caps | durag.store", "description": "Skull caps at durag.store: the low-profile layer for work, sport and style — fit, compression caps and wave caps compared.", "url": "https://durag.store/skull-caps.html"}</script>
 </head>
@@ -44,6 +45,15 @@
     </nav>
   </div>
 </header>
+<nav class="shop-nav" aria-label="Shop categories"><div class="wrap shop-nav-in">
+<a href="/black-friday.html">Black Friday</a>
+<a href="/durags">Durags</a>
+<a href="/bonnets">Bonnets</a>
+<a href="/skull-caps" class="active">Skull Caps</a>
+<a href="/bandanas">Bandanas</a>
+<a href="/ski-masks-balaclavas">Ski Masks</a>
+<a href="/shop">Shop</a>
+</div></nav>
 <main>
   <section><div class="wrap">
     <div class="sec-head"><div class="rule"></div>
@@ -57,8 +67,8 @@
 <h2>Care</h2>
 <p>Wash skull caps the way you wash any close-fitting knit: gentle cycle, air-dry, and rotate a few so one is not carrying every workout. Stretched-out elastic is the usual end of a skull cap&#x27;s life, and rotation is what delays it.</p>
 
-    <div style="border:1px solid var(--accent);border-radius:6px;padding:18px 22px;margin:28px 0">
-    <h2 style="margin-top:0">Black Friday launch — Fri Nov 27</h2>
+    <div class="bf-pointer">
+    <h2>Black Friday launch — Fri Nov 27</h2>
     <p>The Black Friday collection launches Fri Nov 27, 2026. Prices are listed on the product pages — see the full collection on the <a href="/black-friday.html">Black Friday page</a>. Stock lands Mon Nov 23, product photos Tue Nov 24.</p>
     </div>
     <h2>Guides from The Wave Lab</h2>
@@ -70,8 +80,63 @@
           <li><a href="/blog/compression-caps-explained">Compression Caps Explained: What They Do That a Durag Doesn&#x27;t</a></li>
           <li><a href="/blog/wearing-caps-under-hats-and-helmets">Wearing Caps Under Hats and Helmets: Protect Your Pattern at Work and Play</a></li>
     </ul>
-    <p>More categories: <a href="/durags">Durags</a> · <a href="/bonnets">Bonnets</a> · <a href="/ski-masks-balaclavas">Ski Masks &amp; Balaclavas</a> · <a href="/bandanas">Bandanas</a> · <a href="/blog">The Wave Lab</a> · <a href="/shop">Shop</a> · <a href="/reviews">Reviews</a></p>
+    <p class="cat-links">More categories: <a href="/durags">Durags</a> · <a href="/bonnets">Bonnets</a> · <a href="/ski-masks-balaclavas">Ski Masks &amp; Balaclavas</a> · <a href="/bandanas">Bandanas</a> · <a href="/blog">The Wave Lab</a> · <a href="/shop">Shop</a> · <a href="/reviews">Reviews</a></p>
   </div></section>
 </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="/"><img src="assets/logo-durag-store.png" alt="durag.store logo"><span class="logo-word">durag<span class="dot">.</span>store</span></a>
+        <p>Silky durags, wave caps and crown care — built to the Gold Standard. Access Your Excellence.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/duragdotstore" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@durag.store" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://x.com/duragstore" target="_blank" rel="noopener">X</a>
+          <a href="https://www.linkedin.com/in/trav-mane-719a3ba2" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="/durags">Durags</a></li>
+          <li><a href="/blog/wave-caps-complete-guide">Wave Caps</a></li>
+          <li><a href="/skull-caps">Skull Caps</a></li>
+          <li><a href="/blog/compression-caps-explained">Compression Caps</a></li>
+          <li><a href="/bonnets">Bonnets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/blog">The Wave Lab</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-fine">© 2026 durag.store — Access Your Excellence.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- SCROLL BUTTONS (UXK pattern, durag.store colors) -->
+<style>
+.scroll-btn{position:fixed;right:18px;z-index:200;width:52px;height:52px;border-radius:50%;background:#141414;border:2px solid #d4af37;color:#d4af37;font-size:22px;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+.scroll-btn.show{opacity:1;pointer-events:auto}
+.scroll-btn:hover{background:#800020;color:#d4af37;transform:scale(1.08)}
+#toBottom{bottom:24px}#toTop{bottom:92px}
+@media(max-width:720px){.scroll-btn{width:46px;height:46px;right:12px;font-size:20px}}
+</style>
+<button id="toBottom" class="scroll-btn" aria-label="Jump to bottom of page" title="Go to bottom">&#8595;</button>
+<button id="toTop" class="scroll-btn" aria-label="Back to top of page" title="Back to top">&#8593;</button>
+<script>
+(function(){var t=document.getElementById('toTop'),b=document.getElementById('toBottom');
+function s(){var y=window.scrollY||window.pageYOffset;var on=y>300;t.classList.toggle('show',on);b.classList.toggle('show',on);}
+window.addEventListener('scroll',s,{passive:true});s();
+t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+b.addEventListener('click',function(){window.scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'});});})();
+</script>
 </body>
 </html>
